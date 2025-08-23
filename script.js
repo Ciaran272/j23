@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let tokenizer = null;
 
     // 初始化 kuromoji.js
-    kuromoji.builder({ dicPath: 'https://unpkg.com/kuromoji@0.1.2/dict/' }).build((err, kuromojiTokenizer) => {
+    kuromoji.builder({ dicPath: './dict/' }).build((err, kuromojiTokenizer) => {
         if (err) {
             console.error(err);
             lyricsOutput.textContent = '词典加载失败，请刷新页面重试。';
