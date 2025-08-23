@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #FFD700);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    color: #008B8B;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.input-area {
+    margin: 30px 0;
+}
+
+#lyrics-input {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 2px dashed #008B8B;
+    border-radius: 10px;
+    font-size: 1em;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#convert-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#convert-btn:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+.output-area {
+    text-align: left;
+}
+
+.lyrics-container {
+    background-color: #F0F8FF;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    font-size: 1.2em;
+    line-height: 2.8;
+    word-break: break-all;
+}
+
+.lyrics-container .word {
+    display: inline-block;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.lyrics-container ruby {
+    ruby-position: over;
+}
+
+.lyrics-container rt {
+    color: #FF4500;
+    font-size: 0.7em;
+}
+
+footer {
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* 可爱小挂件 */
+.cute-decorations span {
+    position: absolute;
+    font-size: 2em;
+    animation: float 6s ease-in-out infinite;
+}
+
+.sun { top: 20px; right: 30px; }
+.crab { bottom: 15px; left: 20px; animation-delay: 2s; }
+.shell { bottom: 20px; right: 40px; animation-delay: 4s; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}

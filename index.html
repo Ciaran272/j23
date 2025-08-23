@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假名注音</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>假名注音</h1>
+            <p>纯人机翻译 支持长文本</p>
+        </header>
+
+        <div class="cute-decorations">
+            <span class="sun">☀️</span>
+            <span class="crab">🦀</span>
+            <span class="shell">🐚</span>
+        </div>
+
+        <main>
+            <div class="input-area">
+                <textarea id="lyrics-input" placeholder="请粘贴歌词..."></textarea>
+                <button id="convert-btn">生成注音</button>
+            </div>
+
+            <div class="output-area">
+                <h2>输出</h2>
+                <div id="lyrics-output" class="lyrics-container"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for Japanese music lovers</p>
+        </footer>
+    </div>
+
+    <!-- 引入 kuromoji.js -->
+    <script src="https://unpkg.com/kuromoji@0.1.2/build/kuromoji.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
